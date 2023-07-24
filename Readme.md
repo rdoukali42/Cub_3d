@@ -58,11 +58,17 @@ Replace path/to/map.cub with the path to your custom map file or choose one insi
 Use the following keys to control the game:
 
 W: Move forward
+
 S: Move backward
+
 A: Strafe left
+
 D: Strafe right
+
 Left Arrow: Rotate left
+
 Right Arrow: Rotate right
+
 ESC: Exit the game
 
 
