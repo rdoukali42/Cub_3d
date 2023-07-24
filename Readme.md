@@ -1,87 +1,76 @@
+# cub_3d - 42_project
 
-##cub_3d - 42 Project Readme
-#cub_3d
+![Cub_3D](https://img.shields.io/badge/Cub_3D-42_Project-blue)
 
-#Table of Contents
-Introduction
-Project Overview
-Installation
-Usage
-Controls
-Map Format
-Features
-Screenshots
-Contributing
-License
-#Introduction
-Welcome to cub_3d, a project inspired by the classic Wolfenstein 3D game, developed as part of the curriculum at 42, a coding school. This project aims to create a simple raycasting game engine that renders a 3D-like view of a maze from a given map.
+## Description
 
-#Project Overview
-The cub_3d project challenges you to create a raycasting engine using the C programming language and the MinilibX library. The engine will read a map file provided as an argument, render a 3D-like representation of the maze, and allow the player to navigate through it.
+cub_3d is a 42 project that aims to recreate a simple 3D maze using the raycasting technique. The project is written in C and uses the minilibX library for graphics rendering.
 
-#Installation
-To install cub_3d on your system, follow these steps:
+## Table of Contents
 
-Clone the repository to your local machine.
-Navigate to the project directory.
-Compile the project using the provided Makefile:
-go
-Copy code
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Controls](#controls)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Prerequisites
+
+Before running cub_3d, make sure you have the following prerequisites installed:
+
+- macOS (only supports macOS due to the usage of the minilibX library)
+- Xcode command-line tools
+- Git
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/rdoukali42/Cub_3d
+```
+
+2. Enter the cub_3d directory:
+
+```bash
+cd Cub_3d
+```
+
+3. Compile the project:
+```bash
 make
-The executable cub3D should now be generated in the project folder.
-#Usage
+```
+
+## Usage
+
 To run the cub_3d game, use the following command:
 
-bash
-Copy code
-./cub3D path/to/map_file.cub
-For example:
+```bash
+./cub3D path/to/map.cub
+```
 
-bash
-Copy code
-./cub3D maps/maze.cub
-#Controls
-W or ↑: Move forward
-A or ←: Strafe left
-S or ↓: Move backward
-D or →: Strafe right
+Replace path/to/map.cub with the path to your custom map file or choose one inside the /maps folder.
+
+
+## Controls
+
+Use the following keys to control the game:
+
+W: Move forward
+S: Move backward
+A: Strafe left
+D: Strafe right
+Left Arrow: Rotate left
+Right Arrow: Rotate right
 ESC: Exit the game
-#Map Format
-The map is represented in a specific format in a .cub file. The file contains information about the maze layout, textures, and colors. Here is an example of the map file:
 
-bash
-Copy code
-R 1920 1080
-NO ./textures/north_texture.xpm
-SO ./textures/south_texture.xpm
-WE ./textures/west_texture.xpm
-EA ./textures/east_texture.xpm
-S ./textures/sprite_texture.xpm
-F 192,192,192
-C 128,0,0
-1111111111111
-1000000000001
-1022222222201
-1020202022201
-1020202022201
-1022222222201
-1000000000001
-1111111111111
-#Features
-Raycasting rendering engine
-Textured walls
-Sprite rendering
-Player movement and controls
-Basic collision detection
-Configurable settings through map files
-Screenshots
-Screenshot 1
-Screenshot 2
 
-#Contributing
-Contributions to cub_3d are welcome. If you find any bugs or want to propose enhancements, please open an issue or submit a pull request on the project repository.
+## Contributing
 
-##License
-This project is licensed under the MIT License.
+Contributions are welcome! If you find any issues or have suggestions, feel free to open an issue or create a pull request.
 
-Developed with ❤️ by rdoukali at 42_Heilbronn.
+## License
+
+
+[MIT](https://github.com/rdoukali42/Cub_3d/blob/master/LICENSE)
